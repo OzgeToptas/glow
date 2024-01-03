@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Contrast Boost", "Noise Reduction", "HDR Effect" ];
+  const toRotate = [ "Software", "Art", "Destroy" ];
   const period = 2000;
 
   useEffect(() => {
@@ -55,10 +55,10 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Glow - AI Photo Enhancer</span>
-                <h1>{`what I can do?:`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Contrast Boost", "Noise Reduction", "HDR Effect" ]'><span className="wrap">{text}</span></span></h1>
-                  <p> Enhance photo quality with AI Photo Enhancer </p>
-                  <p>Transform your old, blurry photos into high-resolution masterpieces effortlessly using Glow - AI Photo Enhancer. Enhance photo quality with the latest AI technology in just a single tap!</p>
+                <span className="tagline">Ada Personal Blog</span>
+                <h1>{`what I can do?:`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Software", "Art", "Destroy" ]'><span className="wrap">{text}</span></span></h1>
+                  <p> That's exactly what I'm doing these days. </p>
+                  <p> I'm good at ruining everything that's going well, and I do it against my will. And it happens against my will. </p>
                  
               </div>}
             </TrackVisibility>
